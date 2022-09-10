@@ -536,17 +536,18 @@ figure {
   color: #F69D9D !important;
 }
 
-#fh5co-couple,
+
 #fh5co-groom-bride,
 #fh5co-blog-section,
 #fh5co-started,
-#fh5co-when-where,
 #fh5co-guest,
-#fh5co-gallery,
 .fh5co-content-section {
   padding: 16em 0;
 }
 
+#fh5co-couple,
+#fh5co-when-where,
+#fh5co-gallery,
 #fh5co-started-bottom,
 #fh5co-countdown {
   padding: 7em 0;
@@ -692,8 +693,14 @@ figure {
   font-size: 14px;
 }
 
-#fh5co-started,
 #fh5co-started-bottom {
+  position: relative;
+  background-size: cover;
+  background-position: center !important;
+  background-repeat: no-repeat;
+}
+
+#fh5co-started {
   position: relative;
   background-size: cover;
   background-position: bottom center !important;
@@ -706,7 +713,7 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #fh5co-started .form-control {
