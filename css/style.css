@@ -143,6 +143,15 @@ figure {
   .header-top .fh5co-social {
     text-align: center !important;
   }
+  .fh5co-cover {
+    background-position: right !important;
+  }
+  .fh5co-cover-where {
+    background-position: top !important;
+  }
+  .fh5co-cover-gallery {
+    background-position: center !important;
+  }
 }
 
 .fh5co-cover,
@@ -528,7 +537,6 @@ figure {
 }
 
 #fh5co-couple,
-#fh5co-countdown,
 #fh5co-groom-bride,
 #fh5co-blog-section,
 #fh5co-started,
@@ -536,6 +544,11 @@ figure {
 #fh5co-guest,
 #fh5co-gallery,
 .fh5co-content-section {
+  padding: 16em 0;
+}
+
+#fh5co-started-bottom,
+#fh5co-countdown {
   padding: 7em 0;
 }
 
@@ -679,10 +692,11 @@ figure {
   font-size: 14px;
 }
 
-#fh5co-started {
+#fh5co-started,
+#fh5co-started-bottom {
   position: relative;
   background-size: cover;
-  background-position: bottom center;
+  background-position: bottom center !important;
   background-repeat: no-repeat;
 }
 
@@ -740,6 +754,63 @@ figure {
   padding-right: 50px;
 }
 
+#fh5co-started .form-control {
+  background: rgba(0, 0, 0, 0.2);
+  border: none !important;
+  color: #fff;
+  font-size: 16px !important;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fh5co-started-bottom .form-control {
+  background: rgba(0, 0, 0, 0.2);
+  border: none !important;
+  color: #fff;
+  font-size: 16px !important;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fh5co-started-bottom .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#fh5co-started-bottom .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+
+#fh5co-started-bottom .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+
+#fh5co-started-bottom .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+#fh5co-started-bottom .form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#fh5co-started-bottom .btn-block {
+  height: 54px;
+  border: none !important;
+  background: #F69D9D;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
 #fh5co-started .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
@@ -760,6 +831,29 @@ figure {
 }
 
 #fh5co-started .heading-section p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#fh5co-started-bottom .form-inline .form-group {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+
+#fh5co-started-bottom .form-inline .form-group .form-control {
+  width: 100%;
+  padding: 27px 20px !important;
+}
+
+#fh5co-started-bottom .heading-section {
+  margin-bottom: 30px;
+}
+
+#fh5co-started-bottom .heading-section h2 {
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#fh5co-started-bottom .heading-section p {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1261,4 +1355,17 @@ figure {
   height: 100%;
   z-index: 9999;
   background: url(../images/hourglass.svg) center no-repeat #222222;
+}
+
+.account-number {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .account-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
