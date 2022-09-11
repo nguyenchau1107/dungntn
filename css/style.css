@@ -373,7 +373,7 @@ figure {
   left: 0;
   width: 100%;
   z-index: 1022;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .nav-header {
@@ -731,7 +731,6 @@ figure {
 #fh5co-started {
   position: relative;
   background-size: cover;
-  /* background-position: bottom center !important; */
   background-repeat: no-repeat;
 }
 
@@ -1308,19 +1307,10 @@ figure {
     width: 100%;
   }
   .name-title-md {
-    display: none;
+    font-size: 40px !important;
   }
-  .name-title-sm {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 511.5px) {
-  .name-title-md {
-    display: block;
-  }
-  .name-title-sm {
-    display: none;
+  .fh5co-cover .display-tc h2, #fh5co-when-where h2 {
+    font-size: 40px !important;
   }
 }
 
@@ -1378,6 +1368,10 @@ figure {
   padding-top: 2em;
 }
 
+.account-padding {
+  padding: 7em 0 4em 0 !important;
+}
+
 @media screen and (max-width: 768px) {
   .row-top-padded-sm {
     padding-top: 2em;
@@ -1386,6 +1380,30 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  #fh5co-started {
+    background-position: bottom center !important;
+  }
+  .account-padding {
+    padding: 0 !important;
+  }
+  .account-padding h2 {
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  .account-padding p {
+    margin-bottom: 10px !important;
+  }
+  .account-padding strong {
+    font-size: 16px;
+    font-weight: normal !important;
+  }
+  #fh5co-couple h2,
+  #fh5co-couple h1 {
+    font-size: 35px;
+  }
+  #fh5co-couple span {
+    font-size: 16px;
   }
 }
 
@@ -1468,14 +1486,14 @@ figure {
 
 .couple-letter p {
   text-align: center;
-  font-family: 'Adamina';
+  font-family: "Adamina";
   letter-spacing: 4px;
-  color: #5E5E58;
+  color: #5e5e58;
   font-size: 30px;
 }
 
 .couple-letter span {
-  border-top: 1px solid #5E5E58;
+  border-top: 1px solid #5e5e58;
   font-size: 18px;
   font-weight: normal;
   padding: 20px 18px 0;
@@ -1487,5 +1505,5 @@ figure {
   background-image: url(images/cover_bg_21.jpg);
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover; 
+  background-size: cover;
 }
